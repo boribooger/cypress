@@ -4,11 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cleanup": "rm -fr cypress/reports",
-    "merge_reports": "mochawesome-merge cypress/reports/mochawesome-report/*.json > output.json",
-    "mochawesome_report": "marge --reportDir cypress/reports/mochawesome-html-report -t Cypress_Test_Report -p Cypress_HMTL_Report -f Cypress_HMTL_Report --charts true output.json",
     "cy_dashboard" : "cypress run --record --key a42bb02f-c480-467c-8c05-893ff48c0958",
-    "cy:report": "npm run cleanup && npm run cy_dashboard && npm run merge_reports && npm run mochawesome_report"
   },
   "author": "",
   "license": "ISC",
