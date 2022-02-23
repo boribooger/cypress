@@ -1,0 +1,18 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy_dashboard" : "cypress run --record --key a42bb02f-c480-467c-8c05-893ff48c0958"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^4.0.1"
+  },
+  "devDependencies": {
+    "cypress-iframe": "^1.0.1"
+  }
+}
