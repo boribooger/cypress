@@ -1,5 +1,6 @@
 {
   "viewportWidth": 1270,
   "viewportHeight": 720,
-  "projectId": "xzzx4b"
+  "projectId": "xzzx4b",
+  "reporter": "mochawesome"
 }

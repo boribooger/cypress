@@ -1,0 +1,196 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 5,
+    "pending": 1,
+    "failures": 0,
+    "start": "2022-02-23T13:07:34.589Z",
+    "end": "2022-02-23T13:07:47.917Z",
+    "duration": 13328,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 16.666666666666664,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "68410621-9c6c-4452-b99b-4c3f0855231c",
+      "title": "",
+      "fullFile": "cypress\\integration\\firstTest.spec.js",
+      "file": "cypress\\integration\\firstTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7fcec726-6d37-45a4-8c0c-00e1b8c7f026",
+          "title": "My first test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "text exist",
+              "fullTitle": "My first test text exist",
+              "timedOut": null,
+              "duration": 5313,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(':nth-child(1) > a').click();\ncy.get('p').should(function (result) {\n  expect(result).to.contain('Also known as split testing. ');\n});",
+              "err": {},
+              "uuid": "0c2f2e56-a1f6-4dce-afce-3660bf6c9d33",
+              "parentUUID": "7fcec726-6d37-45a4-8c0c-00e1b8c7f026",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "all items on the page exist",
+              "fullTitle": "My first test all items on the page exist",
+              "timedOut": null,
+              "duration": 387,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('li > a').should(function (result) {\n  expect(result).to.have.length(44);\n});",
+              "err": {},
+              "uuid": "eab1120e-1dd7-4a72-a317-dac943e854bc",
+              "parentUUID": "7fcec726-6d37-45a4-8c0c-00e1b8c7f026",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "create new item",
+              "fullTitle": "My first test create new item",
+              "timedOut": null,
+              "duration": 899,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "creatingItem();",
+              "err": {},
+              "uuid": "a94ed388-2ad8-450d-9dbc-9278d02c699c",
+              "parentUUID": "7fcec726-6d37-45a4-8c0c-00e1b8c7f026",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "delete new item what was created",
+              "fullTitle": "My first test delete new item what was created",
+              "timedOut": null,
+              "duration": 727,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "creatingItem();\ncy.get('div > button[class=\"added-manually\"]').click();\ncy.get('div[id=\"elements\"]').should(function (result) {\n  expect(result.nextElementSibling).to.deep.eq(undefined);\n});",
+              "err": {},
+              "uuid": "27de6d74-1a27-4b19-bb34-f521a500ee88",
+              "parentUUID": "7fcec726-6d37-45a4-8c0c-00e1b8c7f026",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "basic authorization",
+              "fullTitle": "My first test basic authorization",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "66e4695c-cc91-4366-b826-df099215b1cf",
+              "parentUUID": "7fcec726-6d37-45a4-8c0c-00e1b8c7f026",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "checking broken images",
+              "fullTitle": "My first test checking broken images",
+              "timedOut": null,
+              "duration": 1497,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[href=\"/broken_images\"]').click();\ncy.get('div > h3').should(function (result) {\n  expect(result).to.contain(\"Broken Images\");\n});\ncy.get('div[class=\"example\"] > img').should(function (result) {\n  expect(result).to.have.length(3);\n});\ncheckingBrokenImage('img/avatar-blank.jpg');\ncheckingBrokenImage('asdf.jpg');\ncheckingBrokenImage('hjkl.jpg');",
+              "err": {},
+              "uuid": "24b83ef7-ca69-451b-8c0d-91a5abfd8d55",
+              "parentUUID": "7fcec726-6d37-45a4-8c0c-00e1b8c7f026",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0c2f2e56-a1f6-4dce-afce-3660bf6c9d33",
+            "eab1120e-1dd7-4a72-a317-dac943e854bc",
+            "a94ed388-2ad8-450d-9dbc-9278d02c699c",
+            "27de6d74-1a27-4b19-bb34-f521a500ee88",
+            "24b83ef7-ca69-451b-8c0d-91a5abfd8d55"
+          ],
+          "failures": [],
+          "pending": [
+            "66e4695c-cc91-4366-b826-df099215b1cf"
+          ],
+          "skipped": [],
+          "duration": 8823,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.1"
+    }
+  }
+}
