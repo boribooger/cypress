@@ -4,16 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy_dashboard" : "cypress run --record --key a42bb02f-c480-467c-8c05-893ff48c0958",
+    "cy_dashboard" : "cypress run --record --key a42bb02f-c480-467c-8c05-893ff48c0958"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^4.0.1",
-    "mocha": "^8.2.1",
-    "mochawesome": "^6.2.1",
-    "mochawesome-merge": "^4.2.0",
-    "mochawesome-report-generator": "^5.1.0"
+    "cypress": "^4.0.1"
   },
   "devDependencies": {
     "cypress-iframe": "^1.0.1"
