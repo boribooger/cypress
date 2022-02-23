@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cy_dashboard" : "cypress run --record --key a42bb02f-c480-467c-8c05-893ff48c0958"
+    "cleanup": "rm -fr cypress/reports",
+    "merge_reports": "mochawesome-merge cypress/reports/mochawesome-report/*.json > output.json",
+    "mochawesome_report": "marge --reportDir cypress/reports/mochawesome-html-report -t Cypress_Test_Report -p Cypress_HMTL_Report -f Cypress_HMTL_Report --charts true output.json",
+    "cy_dashboard" : "cypress run --record --key a42bb02f-c480-467c-8c05-893ff48c0958",
+    "cy:report": "npm run cleanup && npm run cy_dashboard && npm run merge_reports && npm run mochawesome_report"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^4.0.1"
+    "cypress": "^4.0.1",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0"
   },
   "devDependencies": {
     "cypress-iframe": "^1.0.1"
